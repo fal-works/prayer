@@ -37,7 +37,7 @@ class ContextTools {
 	/**
 		@return Current file path, e.g. "src/Main.hx".
 	**/
-	public static inline function getFilePath(): String {
+	public static function getFilePath(): String {
 		final position = Context.getPosInfos(Context.currentPos());
 		return '${position.file}';
 	}

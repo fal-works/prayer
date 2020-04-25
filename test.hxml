@@ -1,0 +1,11 @@
+# Build arguments for test
+
+-cp src
+-cp test
+-dce full
+
+--macro 'Main.main()'
+
+-lib sinker
+
+-D sinker_debug

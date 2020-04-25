@@ -1,0 +1,14 @@
+{
+	"name": "prayer",
+	"url": "https://github.com/fal-works/prayer/",
+	"license": "MIT",
+	"tags": [],
+	"description": "Macro utility.",
+	"version": "0.1.0",
+	"classPath": "src/",
+	"releasenote": "Initial release. Everything may change in future.",
+	"contributors": [
+		"fal-works"
+	],
+	"dependencies": {}
+}

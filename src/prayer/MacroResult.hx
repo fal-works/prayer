@@ -22,10 +22,14 @@ class MacroResultExtension {
 	}
 
 	/**
-		@return `true` if `this` is `Failed`.
+		@return `true` if `this` is `Ok`.
 	**/
-	public static function isFailed<T>(_this: MacroResult<T>): Bool
-		return !isOk(_this);
+	public static function isFailed<T>(_this: MacroResult<T>): Bool {
+		return switch _this {
+			case Ok(_): false;
+			case Failed(_, _): true;
+		}
+	}
 
 	/**
 		@return The value if `Ok`. If `Failed`, outputs error and aborts the current macro call.

@@ -1,5 +1,6 @@
 package prayer.extensions;
 
+#if macro
 @:dox(hide)
 typedef ClassTypeExtension_ = prayer.extensions.ClassTypeExtension;
 
@@ -65,3 +66,4 @@ typedef TypeParamDeclMapper_ = prayer.extensions.MacroTypeMapper.TypeParamDeclMa
 
 @:dox(hide)
 typedef TypeParamDeclsMapper_ = prayer.extensions.MacroTypeMapper.TypeParamDeclsMapper;
+#end

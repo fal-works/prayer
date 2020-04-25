@@ -4,6 +4,9 @@ package prayer;
 using prayer.extensions.MacroTypeCaster;
 using prayer.extensions.ClassTypeExtension;
 
+/**
+	Utility using `haxe.macro.Context`.
+**/
 class ContextTools {
 	/**
 		`MacroResult` version of `Context.getLocalClass()`.
@@ -76,7 +79,7 @@ class ContextTools {
 		final typeString = typeExpression.toString();
 		final position = typeExpression.pos;
 
-		final type = ContextTools.tryGetType(typeString);
+		final type = tryGetType(typeString);
 		if (type == null)
 			return Failed('Type not found: $typeString', position);
 

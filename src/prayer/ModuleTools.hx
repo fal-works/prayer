@@ -97,4 +97,5 @@ private typedef DefinedType = {
 	pathString: String,
 	complex: ComplexType
 };
+
 #end

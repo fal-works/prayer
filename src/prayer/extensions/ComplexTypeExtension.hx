@@ -7,9 +7,7 @@ class ComplexTypeExtension {
 	/**
 		@return The return type of `complexType` if it is a function. otherwise `Failed`.
 	**/
-	public static function getReturnType(
-		complexType: ComplexType
-	): Maybe<ComplexType> {
+	public static function getReturnType(complexType: ComplexType): Maybe<ComplexType> {
 		return switch complexType {
 			case TFunction(_, returnType): Maybe.from(returnType);
 			default: Maybe.none();

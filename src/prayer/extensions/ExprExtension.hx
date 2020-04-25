@@ -19,11 +19,17 @@ class ExprExtension {
 		Types `(thisExpr : complexType)`.
 		@return `Type` representation, or an error message if failed.
 	**/
-	public static function checkType(_this: Expr, complexType: ComplexType): MacroResult<Type> {
+	public static function checkType(
+		_this: Expr,
+		complexType: ComplexType
+	): MacroResult<Type> {
 		try {
 			return Ok(Context.typeof(as(_this, complexType)));
-		} catch (e: Dynamic) {
-			return Failed("The expression does not unify the specified type", _this.pos);
+		} catch (e:Dynamic) {
+			return Failed(
+				"The expression does not unify the specified type",
+				_this.pos
+			);
 		}
 	}
 
@@ -40,7 +46,7 @@ class ExprExtension {
 	public static function unify(_this: Expr, type: Type): Bool {
 		try {
 			return Context.unify(Context.typeof(_this), type);
-		} catch (e: Dynamic) {
+		} catch (e:Dynamic) {
 			return false;
 		}
 	}
@@ -61,7 +67,7 @@ class ExprExtension {
 	public static function getValue(_this: Expr): Maybe<Dynamic> {
 		try {
 			return Maybe.from(stdGetValue(_this));
-		} catch (_: Dynamic) {
+		} catch (_:Dynamic) {
 			return Maybe.none();
 		}
 	}

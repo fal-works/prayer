@@ -3,9 +3,6 @@ package prayer.extensions;
 #if macro
 import prayer.EnumAbstractType;
 
-using haxe.macro.TypeTools;
-using haxe.macro.ExprTools;
-
 class TypeCaster {
 	/**
 		@param type `Type`

@@ -1,8 +1,6 @@
 package prayer;
 
 #if macro
-using haxe.macro.ComplexTypeTools;
-
 /**
 	Collection of values for common usage.
 **/

@@ -1,9 +1,6 @@
 package prayer;
 
 #if macro
-import haxe.macro.Compiler;
-import haxe.macro.Expr.Position;
-
 /**
 	Type that represents either success (`Ok`) or failure (`Failed`).
 **/

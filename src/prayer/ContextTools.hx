@@ -1,7 +1,6 @@
 package prayer;
 
 #if macro
-using haxe.macro.ExprTools;
 using prayer.extensions.MacroTypeCaster;
 using prayer.extensions.ClassTypeExtension;
 

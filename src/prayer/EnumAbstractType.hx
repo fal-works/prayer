@@ -1,8 +1,6 @@
 package prayer;
 
 #if macro
-using haxe.macro.TypeTools;
-
 /**
 	A kind of `Type.AbstractType` instance that hs `@:enum` metadata.
 **/
@@ -46,7 +44,7 @@ abstract EnumAbstractType(AbstractType) to AbstractType {
 	**/
 	@:access(haxe.macro.TypeTools)
 	public function toComplexType2(): ComplexType
-		return TPath(TypeTools.toTypePath(this, []));
+		return TPath(this.toTypePath([]));
 
 	/**
 		@return Enum abstract instance fields of `type` as an array of `Type.ClassField`.

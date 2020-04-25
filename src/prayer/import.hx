@@ -6,5 +6,6 @@ import haxe.macro.Type;
 import haxe.macro.Expr;
 import sinker.*;
 
+using haxe.macro.Tools;
 using sinker.extensions.Index;
 #end

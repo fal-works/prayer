@@ -1,8 +1,6 @@
 package prayer.extensions;
 
 #if macro
-using haxe.macro.TypeTools;
-using haxe.macro.ComplexTypeTools;
 using prayer.extensions.MacroTypeMapper;
 
 class ComplexTypeExtension {

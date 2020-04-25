@@ -1,7 +1,7 @@
 package prayer.extensions;
 
 #if macro
-import haxe.macro.ExprTools;
+import haxe.macro.ExprTools.getValue as stdGetValue;
 import prayer.MacroResult;
 
 class ExprExtension {
@@ -60,7 +60,7 @@ class ExprExtension {
 	**/
 	public static function getValue(_this: Expr): Maybe<Dynamic> {
 		try {
-			return Maybe.from(ExprTools.getValue(_this));
+			return Maybe.from(stdGetValue(_this));
 		} catch (_: Dynamic) {
 			return Maybe.none();
 		}

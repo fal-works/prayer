@@ -15,4 +15,7 @@ using prayer.extensions.Index;
 
 ## Dependencies
 
-- [sinker](https://github.com/fal-works/sinker) (v0.1.0)
+- [sinker](https://github.com/fal-works/sinker) v0.1.0
+
+See also:
+[FAL Haxe libraries](https://github.com/fal-works/fal-haxe-libraries)

@@ -1,9 +1,6 @@
 package prayer;
 
 #if macro
-import prayer.Types.ModuleInfo;
-import prayer.Types.DefinedType;
-
 class ModuleTools {
 	/**
 		Define new imports in the current module in which the macro was called.
@@ -23,7 +20,7 @@ class ModuleTools {
 	**/
 	public static function getModuleInfo(modulePath: String): ModuleInfo {
 		final modulePathLastDotIndex = modulePath.getLastIndexOfDot();
-		final moduleName = modulePath.substr(modulePathLastDotIndex + 1);
+		final moduleName = modulePath.substr(modulePathLastDotIndex.int() + 1);
 		var packagePath: String;
 		var packages: Array<String>;
 		if (modulePathLastDotIndex.isSome()) {

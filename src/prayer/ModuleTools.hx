@@ -88,4 +88,13 @@ class ModuleTools {
 		return definedTypes;
 	}
 }
+
+/**
+	Information about a type defined in any module.
+**/
+private typedef DefinedType = {
+	path: TypePath,
+	pathString: String,
+	complex: ComplexType
+};
 #end

@@ -8,4 +8,4 @@
 
 -lib sinker
 
--D sinker_debug
+--debug

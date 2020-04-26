@@ -56,7 +56,7 @@ Information about a module.
 
 ### EnumAbstractType
 
-A kind of `haxe.macro.Type.AbstractType` instance that hs `@:enum` metadata.
+A kind of `haxe.macro.Type.AbstractType` instance that has `@:enum` metadata.
 
 ### Fields
 

@@ -3,7 +3,6 @@ package prayer;
 #if macro
 import haxe.macro.Compiler;
 #end
-import sinker.*;
 
 /**
 	@see Field `CompilerFlag.type`

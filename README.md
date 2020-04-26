@@ -65,7 +65,9 @@ Just an alias for `Array<haxe.macro.Expr.Field>`.
 
 ## Static extension
 
-`using prayer.extensions.Index;`
+```haxe
+using prayer.extensions.Index;
+```
 
 The above enables you to use additional methods for several macro-related types  
 (such as `Type`, `Expr`, `Field`, `ComplexType`, `ClassType` etc).

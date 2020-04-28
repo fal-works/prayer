@@ -3,7 +3,7 @@
 	"url": "https://github.com/fal-works/prayer/",
 	"license": "MIT",
 	"tags": ["utility", "macro"],
-	"description": "Uutility types and tools for macro.",
+	"description": "Utility types and tools for macro.",
 	"version": "0.1.1",
 	"classPath": "src/",
 	"releasenote": "Fix library dependency.",

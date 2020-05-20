@@ -4,13 +4,13 @@
 	"license": "MIT",
 	"tags": ["utility", "macro"],
 	"description": "Utility types and tools for macro.",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"classPath": "src/",
-	"releasenote": "Fix library dependency.",
+	"releasenote": "Update library dependency.",
 	"contributors": [
 		"fal-works"
 	],
 	"dependencies": {
-		"sinker": "0.1.0"
+		"sinker": "0.2.0"
 	}
 }

@@ -9,6 +9,7 @@ class FieldsExtension {
 		@return The first occurrence of field with `name`.
 	**/
 	public static function findByName(_this: Fields, name: String): Field {
+		// TODO: use Maybe?
 		var found = Values.nullField;
 
 		final len = _this.length;

@@ -75,7 +75,7 @@ The above enables you to use additional methods for several macro-related types
 
 ## Dependencies
 
-- [sinker](https://github.com/fal-works/sinker) v0.2.0
+- [sinker](https://github.com/fal-works/sinker) v0.3.0 or compatible
 
 See also:
 [FAL Haxe libraries](https://github.com/fal-works/fal-haxe-libraries)
